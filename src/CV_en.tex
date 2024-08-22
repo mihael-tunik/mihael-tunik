@@ -1,15 +1,19 @@
-\documentclass[12pt,a4paper,roman]{moderncv}
+\documentclass[12pt,a4paper,sans]{moderncv}
 \usepackage{savesym}
 \savesymbol{fax}
 \usepackage{marvosym}
 \restoresymbol{MARV}{fax}
 \moderncvstyle{classic}
-\moderncvcolor{blue}
+
+\definecolor{carmine}{rgb}{0.56, 0.71, 0.78}
+\colorlet{color1}{carmine}
+%\moderncvcolor{orange}
 
 \usepackage[english]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{color}
 \usepackage[scale=0.87]{geometry}
+
 
 \setlength{\hintscolumnwidth}{3.5cm}
 \renewcommand*{\namefont}{\fontsize{26}{28}\mdseries\upshape}
@@ -18,7 +22,7 @@
 \firstname{Mihael}
 \familyname{Tunik}
 \email{mihael.8112@yahoo.com}
-\extrainfo{https://github.com/mihael-tunik/}
+\social[github]{mihael-tunik}
 \photo[100pt]{m_tunik.jpg}
 \begin{document}
 \makecvtitle
@@ -36,7 +40,7 @@ Seeking a position as a developer-researcher to enhance my career growth.
 \cventry{2019}{Special kernel density estimator for finite sample size conditions}{}{}{}{}
 Work was dedicated to research of theoretical accuracy of statistical kernel density estimator of special type for finite sample size conditions.
 
-\section{Experience: 4 years and 10 months}
+\section{Experience: 5 years}
 \cventry{august 2019~--- now}{Saint-Petersburg State University, Chebyshev Laboratory}{engineer-researcher}{}{}{}
 \begin{itemize}
 \item Here, I started as an intern in the small team, where we're developing statistical instruments for geo-data analysis and seismic inversion. 
@@ -52,13 +56,11 @@ hydrodynamic simulations in Dumux with Bayesian optimization techniques.
 Among other things as a researcher I took part in implementing experimental software for solving Riemann problems. \newline \newline
 Typical tasks: 
  \begin{itemize}
-  \item build custom desktop UI for our application (5K codebase from scratch);
   \item reorganize project codebase, fix architecture issues;
   \item rewrite algorithmic core for optimization; \newline
  \end{itemize}
 \item Latest project, where I work mostly with ML-pipelines for classification/recognition timeseries data from sensors of gas-analyzer.
-Developed baseline window-based approach for classification in combination with classic ML-tools like LDA/QDA or logistic regression. 
-Took part in designing and implementation of multistaged classifier based on classic and gradient boosting models.
+Developed window-based method for timeseries classification based on classic and gradient boosting models.
 \newline \newline
 Typical tasks: 
  \begin{itemize}
@@ -66,33 +68,31 @@ Typical tasks:
   \item Develop project research pipeline completely from scratch;
   \item Propose and develop different models for solving stated ML-problems; \newline
  \end{itemize}
-\item Actually during my work I've created even more things: like microservices for convenient remote access to advanced simulator software
-or gradio dashboards to make research process even more convenient. \newline
+\item Actually during my work I've created even more things: like microservices for convenient remote access to advanced simulator software or custom desktop UI for one of ours subprojects. \newline
 \end{itemize}
 \section{Technical skills}
 \hspace{10mm}Basically, I know three programming languages: \textbf{Python} and \textbf{C/C++}.
-During my work experience, which is long enough, I encountered many more: SQL, Javascript, R and Matlab. \newline
-I'm competent enough in fields of statistics and probability theory, linear algebra and calculus.
-Studied in university and still didn't forget algorithms and numerical methods. \newline
-In the latest projects I had a lot of practice with \textbf{statistical data analisys} and \textbf{ML} (hypothesis testing, 
+During my experience, which is long enough, I worked with Golang, R and Matlab-like languages. \newline
+Started my research career in fields of statistics and probability theory. Also I'm competent enough in numerical methods and algorithms. \newline
+In the recent projects I had a lot of practice with \textbf{statistical data analisys} and \textbf{ML} (hypothesis testing, 
 binary/multiclass table data classification, linear models). \newline
  \begin{itemize}
  \item General purpose skills: \newline
     \begin{itemize}
         \item Many years of experience with different \textbf{Linux} distributions, system configuration, terminal (bash, Unix commands); \newline
         \item Proficient with \textbf{Git}, managing repositories: pull-requests,  \textbf{Github Actions} CI, reviews; \textbf{Notion} for task-tracking; \newline
-        \item Remote access via \textbf{ssh}, familiar with \textbf{Docker} and \textbf{docker-compose}; \newline
+        \item Familiar with \textbf{Docker} and \textbf{docker-compose}; \newline
         \item Extensive experience with \textbf{Python} toolchain and ecosystem: building up Python packages from scratch with \textbf{setuptools},
 managing things with \textbf{venv} or \textbf{Anaconda}; \newline
-        \item Testing with \textbf{pytest}, profiling with \textbf{cProfile} and \textbf{Sphinx} for automated documentation; \newline
+        \item Familiar with testing (\textbf{pytest}), profiling and automated documentation tools; \newline
     \end{itemize}    
  \item Experience as engineer-researcher:\newline
     \begin{itemize}
-        \item Work on project sketches in \textbf{Jupyter Notebooks} and \textbf{Google Colab}; \newline
-        \item Proficient with \textbf{numpy, scipy, sklearn}; very familiar with \textbf{Pandas and Polars} dataframe libs;
-         work with GP models via GPflow, botorch, bayes\_opt, 
-        gradient boosting with \textbf{CatBoost/LightGBM/XGBoost}; certain experience with Tensorflow, Keras and Torch; \newline
-        \item Work with model ensembles, familiar with \textbf{model stacking} techniques; \newline
+        \item Proficient with \textbf{numpy, scipy, sklearn}; familiar with \textbf{Pandas and Polars} dataframe engines;
+         work with gaussian process based models via tools like GPflow and botorch, 
+        gradient boosting with \textbf{CatBoost/LightGBM/XGBoost}; 
+        \item Familiar with Tensorflow and Keras; \newline
+        \item Worked with model ensembles and things like \textbf{model stacking} techniques; \newline
         \item Advanced \textbf{LaTeX} for scientific texts and presentations; \newline
     \end{itemize} 
  \item Some experience from desktop-dev:\newline
@@ -105,10 +105,9 @@ managing things with \textbf{venv} or \textbf{Anaconda}; \newline
         \item Some experience from backend: 
           HTTP protocol, Nginx, \textbf{Flask}, Django, testing APIs with \textbf{Postman};\newline
         \item Basic experience with databases (PostgreSQL, ClickHouse, SQLite) and key-value stores;\newline
-        \item Some experience from frontend: HTML, CSS/SCSS, static site generators like Hugo and Javascript basics; \newline
+        \item Some experience from frontend: HTML, CSS/SCSS, static site generators; \newline
     \end{itemize}
- \item Some experience with C/C++ (parallel computations with OpenMP, make-files and CMake, building small .so libs), 
- linking Python and C/C++ with \textbf{Python C API} or \textbf{Ctypes}; \newline \newline
+ \item Some experience with C/C++ (OpenMP, CMake, building small .so libs), \textbf{Python C API} and \textbf{Ctypes}, worked with low-level API for XGBoost and Eigen libs; \newline \newline
  \end{itemize} 
 \section{Languages}
 \cvitemwithcomment{Russian}{C2, Native speaker}{}{}
@@ -118,4 +117,8 @@ managing things with \textbf{venv} or \textbf{Anaconda}; \newline
 \cvitemwithcomment{Stepik}{October 2022}{\textbf{Hadoop. System for big data processing.}}{Learned basic things about Hadoop ecosystem, including HDFS and MapReduce. \newline\newline
 \textit{Result: certificate with distinction, >90\% score.}}\newline\newline
 \cvitemwithcomment{Stepik}{January 2023}{\textbf{Apache Airflow for analysts.}}{Learned basic things about Apache Airflow, DAGs and ETL in general.\newline\newline \textit{Result: certificate.}} 
+\section{Personal webpage}
+https://mihael-tunik.github.io/ \newline \newline
+Started as toy project this site quickly became personal mini-blog.
+Here I write small articles about programming and computer science.
 \end{document}

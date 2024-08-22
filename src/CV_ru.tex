@@ -1,26 +1,26 @@
-\documentclass[12pt,a4paper,sans]{moderncv}
+\documentclass[12pt,a4paper]{moderncv}
 \usepackage{savesym}
 \savesymbol{fax}
 \usepackage{marvosym}
 \restoresymbol{MARV}{fax}
 \moderncvstyle{classic}
-\moderncvcolor{green}
+\moderncvcolor{blue}
 
-\usepackage[russian]{babel}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
 \usepackage{color}
 \usepackage[scale=0.87]{geometry}
 
 \setlength{\hintscolumnwidth}{3.5cm}
 \renewcommand*{\namefont}{\fontsize{26}{28}\mdseries\upshape}
 
-\name{Михаил Юрьевич}{Туник}
+\firstname{Михаил}
+\familyname{Юрьевич Туник}
+\email{mihael.8112@yahoo.com}
+\extrainfo{https://github.com/mihael-tunik/}
+\photo[100pt]{m_tunik.jpg}
 \begin{document}
 \makecvtitle
-
-\vspace*{-12mm}
-\begin{tabular}{ c }
-\Letter~Почта: mihael.8112@yahoo.com
-\end{tabular}
 
 \section{Образование}
 \cventry{2013~--- 2017}{бакалавр}{Санкт-Петербург}{Санкт-Петербургский политехнический университет Петра Великого}{кафедра прикладной математики и механики}{}
@@ -31,38 +31,61 @@
 
 Работа посвящена исследованию теоретической точности статистической ядерной оценки специального типа в случае конечного размера выборки.
 
-\section{Опыт работы: 3 года 4 месяца}
-\cventry{август 2019~--- настоящее время}{Санкт-Петербургский государственный университет, междисциплинарная исследовательская лаборатория им. П.Л.Чебышева}{программист-математик}{}{}{}
+\section{Опыт: 3 года 10 месяцев}
+\cventry{август 2019~--- настоящее время}{СПбГУ, Лаборатория им. П.Л.Чебышева}{инженер-исследователь}{}{}{}
 \begin{itemize}
-\item Работа в команде над созданием статистического инструмента для анализа геоданных с помощью гауссовских процессов (multi-output GP, sparse GP) на Python.
-Добавление новой функциональности, рефакторинг существующей кодовой базы. Разбор научных статей в предметной области.\newline
-\item Работа над созданием ПО для решения задач сейсмической инверсии. Разработка подхода на основе разработанного на предыдущем этапе инструмента.
-Использование фреймворков Tensorflow/Torch. Участие в разработке, проведение тестов разработанного метода на реальных данных. \newline
-\item Разработка ПО для решения задач Римана, возникающих в ходе решения уравнений гидродинамики в пористых средах.
-Поиск и обработка литературы, проектирование алгоритмов и их реализация. Написание библиотеки на C++ для использования в проекте на Python через ctypes. \newline
-\item Подбор параметров сложных численных симуляций задач гидродинамики в среде Dumux с помощью байесовской оптимизации, библиотека botorch. Участие в алгоритмической разработке инструмента.
-Дополнительно: работа с готовыми дашбордами экспериментов (Tensorboard),
-проектирование и разработка собственного интерфейса ML-системы (PyQt5).
+\item Принимал участие в разработке ПО для анализа геоданных и сейсмической инверсии. There we used various Gaussian process based regression models (for example, multi-output GP or sparse GP). Also I was involved in research for relevant scientific articles in given subject area. \newline
+\item Development of software for solving Riemann problems, which appear in porous media hydrodynamics.
+There, for example, I automated certain research pipelines. Also during this period I've developed auxiliary library on C++ for using in Python project via Ctypes. \newline
+\item Development MVP for the tool for fine-tuning advanced hydrodynamic simulations in Dumux with Bayesian optimization techniques using botorch. Here I worked with Tensorboard and took part in building custom UI with PyQt5. \newline
+\item Last but not least, I take part in local LMS maintaining/management, where my job responsibilities include system administator and devops tasks. \newline
 \end{itemize}
-
-\section{Навыки}
-\cvitem{Для научных расчетов: }{Python (numpy, scipy, keras, autograd), R, Mathematica}{}{}{}{}
-\cvitem{Математический бэкграунд: }{математическая статистика и теория вероятностей (в том числе случайные функции: процессы, поля), теория интегральных преобразований, линейная алгебра, дискретная математика.}{}{}{}{}
-\cvitem{Алгоритмическая подготовка:\hspace*{5mm}}{стандартный курс алгоритмов и численных методов, комбинаторная оптимизация, статистический анализ данных, машинное обучение: основные подходы к регрессии, классификация по табличным данным.}{}{}{}{}
-
-\cvitem{Дополнительно: }{
+\section{Skills}
+\cvitem{Programming languages: }{Python, C/C++, Javascript}{}{}{}{}
+\cvitem{Mathematical background: }{statistics and probability theory (random functions and fields), linear algebra, calculus.}{}{}{}{}
+\cvitem{Computer science background:\hspace*{5mm}}{Standard course of algorithms and numerical methods, various optimization methods, statistical data analisys, ML: regression of all types, table data classification.}{}{}{}{}
+\cvitem{More information and keywords: }{
 \begin{itemize}
-\item Большой опыт работы с Linux [Ubuntu, Mint], настройка системы и работа через bash; \newline
-\item Опыт работы с фреймворками GPFlow, GPy для работы с гауссовскими процессами, небольшой опыт работы с CatBoost; навыки работы с Pandas Dataframes, sklearn;\newline
-\item Свободная работа с LaTeX для написания математических текстов и презентаций; \newline
-\item Опыт создания устанавливаемых пакетов для Python; \newline
-\item Опыт создания оконных приложений на PyQt5, небольшой опыт сборки бинарных файлов для релиза через PyInstaller; \newline
-\item Система контроля версий Git, управление репозиториями в Bitbucket и GitHub (pull-requests, code review и т.п.); \newline
-\item Запуск кода на удаленном сервере через ssh, сборка и настройка Docker на базовом уровне, работа через virtual environment с Python проектами; \newline
-\item C/C++ на среднем уровне (в том числе параллельные вычисления с OpenMP, написание make-файлов, создание небольших .so библиотек, CMake); \newline
-\item Работа с PostgreSQL на базовом уровне, pgAdmin, libpq++.
+\item General purpose skills: \newline
+    \begin{itemize}
+        \item Many years of experience with different \textbf{Linux} distributions, system configuration, terminal (bash, Unix commands); \newline
+        \item \textbf{Git} VCS, managing repositories in \textbf{Bitbucket} and \textbf{GitHub} (pull-requests, Github Actions CI, reviews), \textbf{Notion} for task-tracking; \newline
+        \item Remote access via \textbf{ssh}, familiar with \textbf{Docker} and \textbf{docker-compose}; \newline
+        \item Extensive experience with \textbf{Python} toolchain and ecosystem: building up Python packages from scratch with \textbf{setuptools},
+managing packages and project installations with \textbf{venv} or \textbf{Anaconda}; \newline
+        \item Testing with \textbf{pytest}, \textbf{Sphinx} for automated documentation; \newline
+    \end{itemize}
+\item Experience as engineer-researcher: \newline
+    \begin{itemize}
+        \item Work on project sketches in \textbf{Jupyter Notebooks} and \textbf{Google Colab}; \newline
+        \item Work skills with \textbf{Pandas} and sklearn, experience with GPFlow, \textbf{GPy} for work with Gaussian Processes, gradient boosting with \textbf{CatBoost};\newline
+        \item Advanced work with \textbf{LaTeX} for scientific texts and presentations; \newline
+        \item Experience with Matlab/Octave, Mathematica, R; \newline
+        \item Basic experience with Tensorflow/Torch frameworks; \newline
+    \end{itemize} 
+\item Some experience from desktop-dev:\newline
+    \begin{itemize}
+        \item UI development with \textbf{PyQt5}, Qt Creator IDE, PyInstaller for bulding binaries; \newline
+        \item Experience in writing detailed documentation for code and UI, building auto-generated Excel reports with openpyxl; \newline
+    \end{itemize}
+\item Some experience from web-dev: \newline
+    \begin{itemize}
+        \item Basic knowledge of PostgreSQL, SQLite (and ORM, in general, with Django); \newline 
+        \item Experience with MinIO S3 server deployment; \newline 
+        \item Some experience with HTML, CSS/SCSS and Bootstrap; \newline
+        \item Basic knowledge of Javascript ecosystem (npm, React.js, gulp, Axios); \newline
+        \item Some experience with API building using Django REST Framework or FastAPI.\newline
+        \item Basic knowledge of HTTP protocol, Nginx and ngrok.\newline
+    \end{itemize}
+\item Some experience with C/C++ (parallel computations with OpenMP, make-files and CMake, building small .so libs); \newline \newline
 \end{itemize}
 }{}{}{}{}
-\section{Иностранные языки}
-\cvitemwithcomment{Английский}{Upper-Intermediate}{}{}
+
+\section{Languages}
+\cvitemwithcomment{Russian}{Native speaker}{}{}
+\cvitemwithcomment{English}{Upper-Intermediate}{}{}
+\section{Online courses}
+\cvitemwithcomment{Stepik}{October 2022}{\textbf{Hadoop. Система обработки больших данных.}}{Learned basic things about Hadoop ecosystem, including HDFS, MapReduce, HBase and also Apache Spark. Practicing in writing code in Scala as a bonus.\newline\newline
+\textit{Result: certificate with distinction, >90\% score.}}\newline\newline
+\cvitemwithcomment{Stepik}{January 2023}{\textbf{Apache Airflow для аналитиков.}}{Learned basic things about Apache Airflow, DAGs and ETL in general.\newline\newline \textit{Result: certificate.}} 
 \end{document}

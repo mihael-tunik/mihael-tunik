@@ -7,7 +7,11 @@ pdflatex with packages like moderncv, geometry, color (full list you can find in
 
 ## Build [Linux]
 The easiest way to install TeX ecosystem on
-your computer is to install everything with command
+your computer is to install everything with following command:
+```
+sudo apt-get install texlive-latex-extra
+```
+also you download full version
 (however it requires quite a lot of memory):
 ```
 sudo apt-get install texlive-full
